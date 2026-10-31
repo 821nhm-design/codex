@@ -1,3 +1,5 @@
 model = "gpt-5.1"
 
-# Consider setting [mcp_servers] here!
+[agents.reviewer]
+description = "UI/UX と画面レビューを担当するエージェント"
+config_file = ".github/codex/home/agents/reviewer/reviewer.toml"
