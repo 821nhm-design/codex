@@ -1,0 +1,10 @@
+{
+  "name": "team-workflow-github",
+  "version": "0.1.0",
+  "description": "チームのGitHub（821nhm-design/codex）をClaudeとつなぎ、依頼のIssue化・進捗レポート・レビュー依頼を安全に行うプラグイン",
+  "author": {
+    "name": "821nhm-design"
+  },
+  "repository": "https://github.com/821nhm-design/codex",
+  "keywords": ["github", "workflow", "issues", "pull-requests", "team"]
+}
