@@ -9,12 +9,15 @@ export function Pricing() {
         <h2>{pricing.title}</h2>
         <p className="lead">{pricing.lead}</p>
       </FadeIn>
-      <Stagger className="grid">
+      <Stagger className="grid grid-2">
         {pricing.plans.map((p) => (
           <StaggerItem key={p.name} className={p.featured ? "card featured" : "card"} lift>
-            {p.featured && <span className="badge">おすすめ</span>}
+            {p.badge && <span className="badge">{p.badge}</span>}
             <h3>{p.name}</h3>
-            <p className="price">{p.price}</p>
+            <p className="price">
+              {p.price}
+              {p.period && <span className="price-period">{p.period}</span>}
+            </p>
             <ul>
               {p.items.map((item) => (
                 <li key={item}>{item}</li>

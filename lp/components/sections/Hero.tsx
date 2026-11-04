@@ -36,12 +36,18 @@ export function Hero() {
       </motion.div>
       <motion.div
         className="hero-visual"
-        aria-hidden="true"
         initial={{ opacity: 0, scale: 0.92 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.9, ease: "easeOut", delay: 0.3 }}
       >
-        <span>イメージ画像</span>
+        <motion.img
+          src={hero.image.src}
+          alt={hero.image.alt}
+          width={480}
+          height={480}
+          animate={{ rotate: [0, -6, 0] }}
+          transition={{ duration: 2.4, ease: "easeInOut", repeat: Infinity, repeatDelay: 1.2 }}
+        />
       </motion.div>
     </section>
   );
