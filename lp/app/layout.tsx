@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { MotionProvider } from "@/components/MotionProvider";
+import { site } from "@/content";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "サービス名 | キャッチコピーが入ります",
-  description: "サービスの説明文が入ります（プレースホルダー）。",
+  title: site.title,
+  description: site.description,
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
